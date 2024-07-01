@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>FIT2102 A1 2023</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Pacifico|Open+Sans&display=swap"
+    />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Tetris</h1>
+    <main id="main" class="flex row">
+      <svg id="svgCanvas">
+        <!-- game over text box -->
+        <g id="gameOver" visibility="hidden">
+          <rect x="26" y="120" fill="white" height="48" width="149"></rect>
+          <text x="36" y="150">Game Over</text>
+        </g>
+      </svg>
+      <div id="sideBar" class="flex col">
+        <svg id="svgPreview"></svg>
+        <div id="info" class="flex col">
+          <div class="text">
+            <span class="left">Level: </span>
+            <span class="right" id="levelText">...</span>
+          </div>
+          <div class="text">
+            <span class="left">Score: </span>
+            <span class="right" id="scoreText">...</span>
+          </div>
+          <div class="text">
+            <span class="left">Highscore: </span>
+            <span class="right" id="highScoreText">...</span>
+          </div>
+          <div class="text">
+            <span class="left">Restart: </span>
+            <span class="right">
+              <button id="restartButton">Restart</button></span
+            >
+          </div>
+          <div id="keyControls">
+            <p>Key Controls:</p>
+            <p>W - Rotate</p>
+            <p>A - Move Left</p>
+            <p>S - Move Down</p>
+            <p>D - Move Right</p>
+          </div>
+          <div id="instructions" style="position: absolute; left: 0; top: 0">
+            <h2>Instructions</h2>
+            <p>Welcome to Tetris! Here's how to play:</p>
+            <ol>
+              <li>Use the <strong>W</strong> key to rotate the Tetromino.</li>
+              <li>
+                Use the <strong>A</strong> key to move the Tetromino to the
+                left.
+              </li>
+              <li>
+                Use the <strong>S</strong> key to move the Tetromino down
+                faster.
+              </li>
+              <li>
+                Use the <strong>D</strong> key to move the Tetromino to the
+                right.
+              </li>
+              <li>Clear rows to earn points and level up.</li>
+              <li>Obstacles may appear as the game gets harder!</li>
+              <li>
+                Click the <strong>Restart</strong> button to restart the game
+                anytime.
+              </li>
+              <li>Try to achieve the highest score and level!</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+     
+  </body>
+</html>
