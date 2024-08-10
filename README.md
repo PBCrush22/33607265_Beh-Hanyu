@@ -1,4 +1,13 @@
-# Assignment 1
+## Summary
+
+- Developed a classic Tetris game using RxJS Observable streams and functional programming for efficient state management.
+- Implemented features such as high score tracking, previewing the next shape, and managing game restarts without page refresh.
+- Designed the game to progressively increase difficulty by speeding up block descent or adding obstacles.
+- Employed small, reusable, and pure functions to enhance code readability and maintainability.
+- Leveraged higher-order functions, currying, and function composition for efficient code execution.
+- Managed game state using RxJS Observable, scan, and merge operators.
+- Explored advanced RxJS operators and created custom Observables to enrich the gameplay experience.
+
 
 ## Usage
 
